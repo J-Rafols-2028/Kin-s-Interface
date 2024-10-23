@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Language: English -->
+	<head>
+		<title>Kin's Interface</title>
+		
+		<!-- Welcome to my draft! -->
+		
+		<meta name="Author" content="kinsact">
+		<meta name="Page" content="Index">
+		<meta name="Last Revision" content="October 4, 2024">
+		
+		<!-- Search Icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+				margin: 60px 0;
+			}
+
+			header {
+				background-color: #222222;
+				color: #efefef;
+				padding: 10px 20px;
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+			nav {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+
+			nav a {
+				font-size: 24px;
+				text-decoration: none;
+				color: #efefef;
+				margin: 0 15px;
+				padding: 4px 8px;
+			}
+			
+			.search-container {
+				display: flex;
+				align-items: center;
+				margin: 0 5px;
+				padding: 6px;
+			}
+
+			.search-container input[type="text"] {
+				font-size: 16px;
+				border: 1px solid #000000;
+				padding: 4px 8px;
+				width: 100px;
+			}
+
+			.search-container button {
+				background-color: #efefef;
+				border: 1px solid #000000;
+				padding: 5px 8px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+			}
+
+			.search-container button i {
+				font-size: 16px;
+			}
+
+			.nav-links a {
+				font-size: 18px;
+				text-decoration: none;
+				color: #222222;
+				margin: 0 5px;
+				padding: 4px 8px;
+				background-color: #efefef;
+			}
+
+			.nav-links a:hover {
+				background-color: #ddd;
+			}
+
+			main {
+				padding: 20px;
+				display: flex; /* Alignes the Logo and Search Bar */
+				align-items: flex-start; /* Align items at the top */
+				flex: 1; /* Allow the main to grow and take space */
+				width: 100%;
+			}
+
+			.logo {
+				margin: 0 25px 0 70px;
+			}
+			
+			.text-section {
+				width: 50%;
+				margin: 0 70px 0 0;
+			}
+			
+			.unlocked-content {
+				color: #43a441;
+				text-decoration: none;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+			.locked-content {
+				color: #971313;
+				text-decoration: none;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+			.hidden-content {
+				color: #545454;
+				text-decoration: none;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+			.link-text {
+				color: #000000;
+				text-decoration: none;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+			.owner-socials {
+				color: #ffffff;
+				text-decoration: none;
+				cursor: pointer;
+				display: inline-block;
+			}
+
+			.tables {
+				padding: 0 70px 0 0;
+				margin-left: auto;
+				width: 50%
+			}
+			
+			table {
+				margin: 0 0 25px 0;
+				border-collapse: collapse; /* Ensures borders are collapsed */
+				border: 1px solid black;
+			}
+			
+			.owner-post table {
+				background-color: #5b1111;
+				width: 100%;
+				margin: 0 0 25px 0;
+				border-collapse: collapse; /* Ensures borders are collapsed */
+				border: 1px solid black;
+			}
+			
+			.featured table {
+				background-color: #ffffff;
+				width: 100%;
+				margin: 0 0 25px 0;
+				border-collapse: collapse; /* Ensures borders are collapsed */
+				border: 1px solid black;
+			}
+			
+			.owner-known table {
+				background-color: #222222;	
+				width: 100%;
+				margin: 0 0 25px 0;
+				border-collapse: collapse; /* Ensures borders are collapsed */
+				border: 1px solid black;
+			}
+
+			td {
+				text-align: left;
+				vertical-align: top;
+			}
+
+			footer {
+				background-color: #222222;
+				color: #efefef;
+				padding: 10px 20px;
+				text-align: left;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Top Panel -->
+		<header>
+			<nav>
+				<!-- Website name -->
+				<a href="#website-name">Kin's Interface</a>
+
+				<!-- Search container -->
+				<div class="search-container">
+					<form action="/action_page.php" style="display: flex; align-items: center;">
+						<input type="text" placeholder="Search..." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+
+				<!-- Navigation links -->
+				<div class="nav-links">
+					<a href="#home">Home</a>
+					<a href="#owner">Owner</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Main Section -->
+		<main>
+			<!-- Logo as an image -->
+			<img src="https://via.placeholder.com/100" alt="LOGO" class="logo" height="30" width="30">
+			
+			<!-- Text Section -->
+			<div class="text-section">
+				<div class="link-container">
+					<a href="Content/Kin's Interface.pdf" class="unlocked-content">Welcome to my Website!</a>
+					<p class="description">The first post of this webiste!</p>
+				</div>
+
+				<div class="link-container">
+					<a href="Content/Locked Content.pdf" class="locked-content">Upcoming Updates!</a>
+					<p class="description">The following updates are... ;)</p>
+				</div>
+
+				<div class="link-container">
+					<a href="Content/Hidden Content.pdf" class="hidden-content">The Secret to Web Development</a>
+					<p class="description">This is not visible to you.</p>
+				</div>
+				
+				<p style="text-decoration: underline">End of Page</p>
+			</div>
+
+			<!-- Tables on the right -->
+			<div class="tables">
+				<div class="owner-post">
+					<table>
+						<tr><td style="color: #ffffff"><h2>Hello users!</h2></td></tr>
+						<tr><td style="color: #ffffff"><p>As you know, I am user kinsact, the owner of this website.</p></td></tr>
+						<tr><td style="color: #ffffff"><p>For now, there isn't much to see here.</p></td></tr>
+					</table>
+				</div>
+				
+				<div class="featured">
+					<table border="1">
+						<tr>
+							<td rowspan="4">
+								<h2>Featuring</h2>
+								Story #1
+							</td>
+						</tr>
+						<tr>
+							<td>Story #2</td>
+						</tr>
+						<tr>
+							<td>Story #3</td>
+						</tr>
+						<tr>
+							<td>Story #4</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="owner-known">
+					<table>
+						<tr><td style="color: #ffffff">Website in ownership of: <a href="Owner.html" class="owner-socials">kinsact</a> (your dear website developer.)</p></td></tr>
+						<tr><td style="color: #ffffff">Socials:</td></tr>
+						<tr><td style="color: #ffffff"><a href="https://www.youtube.com/@kinsact" class="owner-socials">- YouTube</a></td></tr>
+						<tr><td style="color: #ffffff"><a href="https://x.com/iamcalledjose" class="owner-socials">- Twitter</a></td></tr>
+					</table>
+				</div>
+			</div>
+		</main>
+
+		<!-- Bottom Panel -->
+		<footer>
+			<p>&copy; 2024 kinsact. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
